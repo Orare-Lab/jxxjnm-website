@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义颜色 */
+:root {
+  --brand-dark: #ffffff;
+  --brand-light: #ffffff;
+}
+
+/* 全局字体与基础样式 */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #000000;
+  background-color: #f9fafb;
+}
+
+/* 导航栏样式 */
+.header-nav {
+  background-color: var(--brand-dark);
+}
+.header-nav a {
+  @apply text-white hover:text-var(--brand-light);
+}
+
+/* Hero 区块样式 */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* 卡片样式 */
+.card {
+  @apply bg-white rounded-lg shadow-lg p-6;
+}
+.card-title {
+  @apply text-xl font-semibold mb-2;
+}
+.card-text {
+  @apply text-gray-600;
+}
+
+/* 按钮风格 */
+.btn-primary {
+  @apply bg-var(--brand-light) text-white px-6 py-3 rounded-lg shadow hover:bg-opacity-90;
+}
+
+/* 页脚样式 */
+.footer {
+  background-color: var(--brand-dark);
+  color: #000000;
+}
+.footer a {
+  @apply hover:text-var(--brand-light);
+}
