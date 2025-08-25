@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>新材料有限公司 - 联系我们</title>
+  <title>江西旭佳新材料有限公司 - 联系我们</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -11,7 +11,7 @@
   <!-- 导航栏 -->
   <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-blue-700">新材料有限公司</h1>
+      <h1 class="text-2xl font-bold text-blue-700">江西旭佳新材料有限公司</h1>
       <nav class="space-x-6">
         <a href="index.html" class="hover:text-blue-600">首页</a>
         <a href="products.html" class="hover:text-blue-600">产品</a>
@@ -22,35 +22,55 @@
   </header>
 
   <!-- 联系方式 -->
-  <section class="max-w-5xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">联系我们</h2>
-    <div class="grid md:grid-cols-2 gap-10">
-      <!-- 联系信息 -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4">联系方式</h3>
-        <p>电话：400-123-4567</p>
-        <p>邮箱：info@newmaterials.com</p>
-        <p>地址：上海市浦东新区科技园区XX路88号</p>
+<section class="max-w-7xl mx-auto py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-10">联系我们</h2>
+
+  <!-- 左右布局 -->
+  <div class="flex flex-col md:flex-row gap-10">
+    
+    <!-- 左侧：联系方式 -->
+    <div class="bg-white rounded-lg shadow-md p-8 md:w-1/2 flex flex-col gap-4">
+      <!-- 电话 -->
+      <div class="text-xl leading-relaxed">
+        联系方式：
+        <a href="tel:18151277982" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition mr-2">
+          181-5127-7982
+        </a>
+        <a href="tel:13320083777" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          133-2008-3777
+        </a>
       </div>
 
-      <!-- 表单 -->
-      <div>
-        <h3 class="text-xl font-semibold mb-4">在线留言</h3>
-        <form class="space-y-4">
-          <input type="text" placeholder="姓名" class="w-full p-3 border rounded-lg" required>
-          <input type="email" placeholder="邮箱" class="w-full p-3 border rounded-lg" required>
-          <textarea placeholder="留言内容" class="w-full p-3 border rounded-lg" rows="4"></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">提交</button>
-        </form>
+      <!-- 邮箱 -->
+      <div class="text-xl leading-relaxed">
+        邮箱：<a href="mailto:HWcoating@126.com" class="text-blue-600 hover:underline">HWcoating@126.com</a>
       </div>
+
+      <div class="mt-auto flex justify-center">
+      <img src="assets/images/wechat_qrcode.png" alt="微信二维码" class="w-32 h-32 object-contain rounded-lg">
     </div>
-  </section>
+    </div>
+
+    <!-- 右侧：地图 -->
+    <div class="bg-white rounded-lg md:w-1/2 overflow-hidden">
+      <!-- 地址 -->
+      <div class="text-xl leading-relaxed">
+        地址：江西省景德镇市浮梁县三龙园区
+      </div>
+      <img src="https://restapi.amap.com/v3/staticmap?location=117.1360,29.3837&zoom=13&size=900*900&markers=mid,,A:117.1360,29.3837&key=11f4ab50cdcc45b627f8d99843d47f0a" 
+           alt="江西旭佳新材料有限公司地图" class="w-full h-64 object-cover rounded-lg">
+    </div>
+
+  </div>
+</section>
+
 
   <!-- 页脚 -->
   <footer class="bg-gray-900 text-gray-300 py-8 mt-10">
     <div class="max-w-7xl mx-auto text-center">
-      <p>© 2025 新材料有限公司 | 版权所有</p>
+      <p>© 2025 江西旭佳新材料有限公司 | 版权所有</p>
     </div>
   </footer>
+
 </body>
 </html>
